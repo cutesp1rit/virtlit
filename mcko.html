@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel='stylesheet' href="assets_oblomov/CSS/style_oblomov.css">
+        <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+        <title>Об авторе</title>
+        <link type="image/x-icon" href="assets_oblomov/images/favicon.ico" rel="shortcut icon">
+        <link type="Image/x-icon" href="assets_oblomov/images/favicon.ico" rel="icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
+<h1>Шаблоны mcko</h1>
+<h3>ответы:</h3>
+<a class='nav__link' href="https://drive.google.com/drive/mobile/folders/1_BFqUF9Q1r0Axet3x4s7UI-u4Aespq--?usp=sharing">ты дурак</a>
+<br>
+<h3>#1 1.1</h3>
+<pre>for a in range(1, 40):</pre>
+<pre>    for b in range(1, 40):</pre>
+<pre>        for c in range(1, 40):</pre>
+<pre>            s = '0' + a*'1' + b*'2' + c*'3'+'0'</pre>
+<pre>            while not '00' in s:</pre>
+<pre>                s = s.replace('01','210',1)</pre>
+<pre>                s = s.replace('02','3101',1)</pre>
+<pre>                s = s.replace('03','2012',1)</pre>
+<pre>            if s.count('1') == 60 and s.count('2') == 50 and s.count('3') == 18:</pre>
+<pre>                print(a, b, c)</pre>
+<br>     
+<h3>#1 1.2</h3>
+<pre>s='7'*2022</pre>
+<pre>while '777' in s or '333' in s:</pre>
+<pre>    s=s.replace('777', '3', 1)</pre>
+<pre>    s=s.replace('333', '7', 1)</pre>
+<pre>print(s)</pre>
+<br>      
+<h3>#2</h3>
+<pre>print('x y w z')</pre>
+<pre>for x in range(2):</pre>
+ <pre>   for y in range(2):</pre>
+  <pre>      for w in range(2):</pre>
+    <pre>        for z in range(2):</pre>
+      <pre>          if ((x<=y) and ((not x)<=(not z)) or w)==0:</pre>
+       <pre>             print(x, y, w, z)</pre>
+<br>
+<h3>#4</h3>
+<img class="" src="assets/images_mcko/nomer4.jpg" alt="">
+<br>
+<h3>#5</h3>
+<pre>for i in range(1, 1000):</pre>
+<pre>    s=i</pre>
+<pre>    n=200</pre>
+<pre>    while s>0:</pre>
+<pre>        s=s//4</pre>
+<pre>        n=n-6</pre>
+<pre>    if n==170:</pre>
+  <pre>      print(i)</pre>
+ <br>
+<h3>#6</h3>
+<pre>1. тестовый файл:</pre> 
+<pre>I=k*i</pre>
+<pre>N=2**i</pre>
+<pre>2. графический файл:</pre>
+<pre>I=k*i</pre>
+<pre>K=m*n</pre>
+<pre>N=2**i</pre>
+<pre>3. звуковой файл:</pre>
+<pre>I=a*i*D*t</pre>
+<pre>D-частота дискритизации</pre>
+<pre>4. пропускная способность:</pre>
+<pre>V=I/t</pre>
+<br>
+<h3>#9</h3>
+<img class="" src="assets/images_mcko/nomer9.1.jpg" alt="">
+<br>
+<img class="" src="assets/images_mcko/nomer9.2.jpg" alt="">
+<br>
+<h3>#10</h3>
+<pre>x=</pre>
+<pre>s=''</pre>
+<pre>while x>0:</pre>
+<pre>    s=str(x%4)+s</pre>
+<pre>    x=x//4</pre>
+<pre>print(s.count('3'))</pre>
+<br>     
+<h3>#11</h3>
+<pre>def f(x, y):</pre>
+<pre>    if x==y:</pre>
+ <pre>       return 1</pre>
+<pre>    if x>y or x==15:</pre>
+  <pre>      return 0</pre>
+<pre>    if x меньше (то есть галка, бокальчик вправо) y: </pre>
+  <pre>      return f(x+1, y)+f(x*2, y)</pre>
+<pre>print(f(1,16))</pre>
+<br> 
+<h3>#12</h3>
+<pre>for i in range(1, 1000):</pre>
+<pre>    x=i</pre>
+<pre>    l=0</pre>
+<pre>    m=0</pre>
+<pre>    while x>0:</pre>
+ <pre>       l=l+1</pre>
+  <pre>      if m<(x%8):</pre>
+ <pre>           m=x%8</pre>
+ <pre>       x=x//8</pre>
+ <pre>   if l==4 and m==7:</pre>
+ <pre>       print(i)</pre>
+<br> 
+<h3>#13</h3>
+<pre>for a in range(1, 10000):</pre>
+<pre>    flag=True</pre>
+<pre>    for x in range(1, 10000):</pre>
+<pre>        if ((x%54!=0 or x%80!=0)<=(x%a!=0))==0:</pre>
+  <pre>          flag=False</pre>
+<pre>    if flag:</pre>
+  <pre>      print(a)</pre>
+<br> 
+<h3>#14</h3>
+<pre>f=open('')</pre>
+<pre>a=[]</pre>
+<pre>b=[]</pre>
+<pre>for i in f:</pre>
+<pre>    a.append(int(i))</pre>
+<pre>for i in range(len(a)-1):</pre>
+<pre>    if a[i]%4==0 and a[i+1]%4==0:</pre>
+<pre>        b.append(a[i]+a[i+1])</pre>
+<pre>print(len(b), max(b))</pre>
+<br>
+<img class="" src="assets/images_mcko/vspomogalka.jpg" alt="">
+</body>
+</html>
